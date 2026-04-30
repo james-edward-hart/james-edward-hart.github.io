@@ -1,0 +1,74 @@
+@phdthesis{hart2023gut,
+  title={Gut Microbial Metabolite Indole: A Stimulator of Enteroendocrine Cell Differentiation via Activation of Aryl Hydrocarbon Receptor},
+  author={Hart, James},
+  year={2023},
+  school={Marshall University}
+}
+
+@article{amstadter2025role,
+  title={What is the role of paternal genetic transmission on risk for PTSD and internalizing and externalizing disorders?},
+  author={Amstadter, Ananda B and Abrahamsson, Linda and Hart, James E and Sundquist, Jan and Sundquist, Kristina and Kendler, Kenneth S},
+  journal={Psychological Medicine},
+  volume={55},
+  pages={e76},
+  year={2025},
+  publisher={Cambridge University Press}
+}
+
+@article{gallardo2024study,
+  title={A Study on the Comorbidity of PTSD Symptoms and Alcohol Consumption Among VCU Students},
+  author={Gallardo-Mena, Galilea and Hart, James and Bountress, Kaitlin and Amstadter PhD, Ananda B and Group, Spit for Science Working},
+  year={2024}
+}
+
+@article{barr2025multivariate,
+  title={Multivariate genome-wide association study (GWAS) of PTSD, Alcohol Use and Alcohol Use Disorders},
+  author={Barr, Peter B and Bountress, Kaitlin and Chatzinakos, Chris and Hart, James E and Neale, Zoe E and Sheerin, Christina and Johnson, Emma and Atkinson, Elizabeth G and Nievergelt, Caroline M and Maihofer, Adam X and others},
+  journal={medRxiv},
+  pages={2025--03},
+  year={2025},
+  publisher={Cold Spring Harbor Laboratory Press}
+}
+
+@article{singh2022tu1575,
+  title={Tu1575: CRYPTOSPORIDIUM PARVUM INFECTION ALTERS INTESTINAL NA+/GLUCOSE COTRANSPORT AND NA+/K+ ATPASE ACTIVITY VIA DIFFERENTIAL MECHANISMS},
+  author={Singh, Soudamani and Nepal, Niraj and Mansour, Hassan and Hart, James and Jagadeesan, Arunkumar and Sundaram, Uma and Borthakur, Alip},
+  journal={Gastroenterology},
+  volume={162},
+  number={7},
+  pages={S--1014},
+  year={2022},
+  publisher={WB Saunders}
+}
+
+@article{hart2022396,
+  title={396: GUT MICROBIAL METABOLITE OF TRYPTOPHAN STIMULATES ENTEROENDOCRINE CELL DIFFERENTIATION IN HUMAN INTESTINAL ORGANOIDS VIA ARYL HYDROCARBON RECEPTOR-DEPENDENT MECHANISM},
+  author={Hart, James and Haynes, Jennifer and Sundaram, Uma and Borthakur, Alip},
+  journal={Gastroenterology},
+  volume={162},
+  number={7},
+  pages={S--85},
+  year={2022},
+  publisher={WB Saunders}
+}
+
+@article{hart2025gut,
+  title={Gut Microbial Metabolites of Tryptophan Augment Enteroendocrine Cell Differentiation in Human Colonic Organoids: Therapeutic Potential for Dysregulated GLP1 Secretion in Obesity},
+  author={Hart, James and Mansour, Hassan and Sawant, Harshal and Chicko, Morrison and Arthur, Subha and Haynes, Jennifer and Borthakur, Alip},
+  journal={International Journal of Molecular Sciences},
+  volume={26},
+  number={15},
+  pages={7080},
+  year={2025},
+  publisher={MDPI}
+}
+
+@article{disner2025t21,
+  title={T21. MULTIVARIATE GENETIC RISK LINKS PTSD, SUBSTANCE USE DISORDER, AND PERSISTENT POST-CONCUSSIVE SYMPTOMS},
+  author={Disner, Seth and Bountress, Kaitlin and Hart, James and Barr, Peter and Meyers, Jacquelyn and Cifu, David and Walker, William and Walton, Samuel and Amstadter, Ananda and Sheerin, Christina},
+  journal={European Neuropsychopharmacology},
+  volume={99},
+  pages={167--168},
+  year={2025},
+  publisher={Elsevier}
+}

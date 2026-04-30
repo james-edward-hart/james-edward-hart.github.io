@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Notebook | James E. Hart</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page page--multimedia">
+      <div class="backdrop">
+        <div class="orb orb-one"></div>
+        <div class="orb orb-two"></div>
+        <div class="grid"></div>
+      </div>
+
+      <header class="topbar reveal" style="--d: 0.05s">
+        <a class="home-link menu-link" href="index.html">James E. Hart</a>
+        <nav class="menu menu--inline" aria-label="Primary">
+          <a href="publications.html" class="menu-link">Publications</a>
+          <a href="essays.html" class="menu-link">Essays</a>
+          <a href="tutorials.html" class="menu-link">Tutorials</a>
+          <a href="multimedia.html" class="menu-link is-active">Notebook</a>
+          <a href="press-releases.html" class="menu-link">Press releases</a>
+        </nav>
+      </header>
+
+      <section class="media-wrap">
+        <header class="media-intro reveal" style="--d: 0.1s">
+          <p class="media-kicker">Media</p>
+          <h1 class="media-title-main">Notebook</h1>
+
+        </header>
+
+        <div class="media-grid">
+          <article class="media-card media-card--text reveal" style="--d: 0.15s">
+            <div class="media-type">Text</div>
+            <blockquote class="media-quote">
+              "Show them how you backflip through tragic. Show them how the struggle made magic."
+            </blockquote>
+            <p class="media-caption media-caption--quote">
+              <span class="media-attribution">Swedish House Mafia</span>
+              <a class="apple-music-link" href="#" rel="noopener" aria-label="Listen on Apple Music">
+                <svg class="apple-music-link__icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path fill="currentColor" d="M19.5 3.5c-.4-.3-.9-.4-1.4-.3l-9 1.7c-.7.1-1.2.7-1.2 1.4v9.4c-.5-.3-1.1-.4-1.7-.3-1.5.2-2.7 1.4-2.7 2.8 0 1.5 1.4 2.6 3 2.4 1.5-.2 2.7-1.4 2.7-2.8V9l8-1.5v6.3c-.5-.3-1.1-.4-1.7-.3-1.5.2-2.7 1.4-2.7 2.8 0 1.5 1.4 2.6 3 2.4 1.5-.2 2.7-1.4 2.7-2.8V4.6c0-.4-.2-.8-.5-1.1z"/>
+                </svg>
+                <span class="apple-music-link__label">Listen on Apple Music</span>
+              </a>
+              <!-- Replace href="#" with the Apple Music track URL -->
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        Banner: <a href="assets/mountains/CREDITS.md">Appalachian Trail near Low Gap</a> by Jason Hollinger (CC BY 2.0)
+      </footer>
+    </main>
+
+    <div class="lightbox" aria-hidden="true">
+      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Expanded photo">
+        <button class="lightbox-close" type="button" aria-label="Close full screen photo">Close</button>
+        <img class="lightbox-image" alt="" />
+        <p class="lightbox-caption" hidden></p>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".carousel").forEach((carousel) => {
+        const track = carousel.querySelector(".carousel-track");
+        const prev = carousel.querySelector('[data-dir="prev"]');
+        const next = carousel.querySelector('[data-dir="next"]');
+
+        if (!track || !prev || !next) {
+          return;
+        }
+
+        const scrollAmount = () => Math.max(track.clientWidth * 0.85, 200);
+
+        prev.addEventListener("click", () => {
+          track.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+        });
+
+        next.addEventListener("click", () => {
+          track.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+        });
+      });
+
+      const lightbox = document.querySelector(".lightbox");
+      const lightboxImage = lightbox?.querySelector(".lightbox-image");
+      const lightboxCaption = lightbox?.querySelector(".lightbox-caption");
+      const lightboxClose = lightbox?.querySelector(".lightbox-close");
+
+      const openLightbox = (img) => {
+        if (!lightbox || !lightboxImage) {
+          return;
+        }
+
+        lightboxImage.src = img.src;
+        lightboxImage.alt = img.alt || "Expanded photo";
+
+        const caption = img.closest("figure")?.querySelector("figcaption")?.textContent?.trim();
+        if (lightboxCaption) {
+          if (caption) {
+            lightboxCaption.textContent = caption;
+            lightboxCaption.hidden = false;
+          } else {
+            lightboxCaption.textContent = "";
+            lightboxCaption.hidden = true;
+          }
+        }
+
+        lightbox.classList.add("is-open");
+        lightbox.setAttribute("aria-hidden", "false");
+        document.body.style.overflow = "hidden";
+      };
+
+      const closeLightbox = () => {
+        if (!lightbox || !lightboxImage) {
+          return;
+        }
+
+        lightbox.classList.remove("is-open");
+        lightbox.setAttribute("aria-hidden", "true");
+        lightboxImage.src = "";
+        document.body.style.overflow = "";
+      };
+
+      document.querySelectorAll(".carousel-slide img").forEach((img) => {
+        img.addEventListener("click", () => openLightbox(img));
+      });
+
+      lightboxClose?.addEventListener("click", closeLightbox);
+      lightbox?.addEventListener("click", (event) => {
+        if (event.target === lightbox) {
+          closeLightbox();
+        }
+      });
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape" && lightbox?.classList.contains("is-open")) {
+          closeLightbox();
+        }
+      });
+    </script>
+  </body>
+</html>
