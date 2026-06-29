@@ -976,6 +976,11 @@ body {
   box-shadow: 0 1px 6px rgba(19, 28, 42, 0.18);
 }
 
+button.apple-music-link {
+  font-family: inherit;
+  cursor: pointer;
+}
+
 .apple-music-link:hover,
 .apple-music-link:focus-visible {
   background: var(--moss-deep);
