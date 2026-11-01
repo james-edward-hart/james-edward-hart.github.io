@@ -7,27 +7,23 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="page page--press">
-      <div class="backdrop">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="grid"></div>
-      </div>
-
-      <header class="topbar reveal" style="--d: 0.05s">
-        <a class="home-link menu-link" href="index.html">James E. Hart</a>
-        <nav class="menu menu--inline" aria-label="Primary">
-          <a href="publications.html" class="menu-link">Publications</a>
-          <a href="essays.html" class="menu-link">Essays</a>
-          <a href="tutorials.html" class="menu-link">Tutorials</a>
-          <a href="multimedia.html" class="menu-link">Notebook</a>
-          <a href="press-releases.html" class="menu-link is-active">Press releases</a>
-        </nav>
-      </header>
-
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="site-name" href="index.html">James E. Hart</a>
+      <nav class="site-nav" aria-label="Primary">
+          <a href="publications.html">Publications</a>
+          <a href="essays.html">Essays</a>
+          <a href="tools.html">Tools</a>
+          <a href="press-releases.html" aria-current="page">Press Releases</a>
+          <a href="profiles.html">Profiles</a>
+          <a href="index.html#notebook">Notebook</a>
+      </nav>
+    </header>
+    <main id="main" class="content-page">
+      <h1>Press Releases</h1>
       <section class="essay-wrap">
         <div class="essay-list">
-          <article class="essay-card reveal" style="--d: 0.1s">
+          <article class="essay-card">
             <h2 class="essay-title">
               <a
                 href="https://jcesom.marshall.edu/news/musom-news/new-research-uncovers-gut-microbe-derived-metabolites-as-potential-therapy-for-obesity-related-metabolic-disorders/"
@@ -48,10 +44,10 @@
           </article>
         </div>
       </section>
-
-      <footer class="site-footer">
-        Banner: <a href="assets/mountains/CREDITS.md">Appalachian Trail near Low Gap</a> by Jason Hollinger (CC BY 2.0)
-      </footer>
     </main>
+    <footer class="site-footer">
+      <a href="index.html">Home</a>
+      <a href="profiles.html">Profiles &amp; contact</a>
+    </footer>
   </body>
 </html>
