@@ -270,6 +270,10 @@ p {
   margin-bottom: 0;
 }
 
+.notebook-entry img {
+  height: auto;
+}
+
 .notebook-entry blockquote {
   font-size: inherit;
   line-height: inherit;
