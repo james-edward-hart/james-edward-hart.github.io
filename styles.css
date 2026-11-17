@@ -225,6 +225,14 @@ p {
   height: auto;
 }
 
+.introduction-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
 .notebook-jump {
   display: flex;
   align-items: center;
@@ -239,6 +247,76 @@ p {
 .notebook-jump:hover span:first-child {
   text-decoration: underline;
   text-underline-offset: 0.15em;
+}
+
+.subscribe {
+  position: relative;
+  flex-shrink: 0;
+  margin-left: auto;
+  color: var(--secondary);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+}
+
+.subscribe summary {
+  padding-block: 0.75rem;
+  list-style: none;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
+
+.subscribe summary::-webkit-details-marker {
+  display: none;
+}
+
+.subscribe-form {
+  position: absolute;
+  right: 0;
+  bottom: calc(100% + 0.25rem);
+  z-index: 1;
+  width: min(20rem, calc(100vw - 2rem));
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  background: var(--paper);
+}
+
+.subscribe-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe-fields {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.subscribe-fields input,
+.subscribe-fields button {
+  min-height: 2.5rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid var(--rule);
+  border-radius: 0;
+  font: inherit;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.subscribe-fields input {
+  flex: 1;
+  min-width: 0;
+}
+
+.subscribe-fields button {
+  flex-shrink: 0;
+  border-color: var(--ink);
+  cursor: pointer;
+}
+
+.subscribe-honeypot {
+  display: none;
 }
 
 /* Notes share one quiet reading column, with no cards or decorative labels. */
