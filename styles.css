@@ -274,6 +274,10 @@ p {
   height: auto;
 }
 
+.notebook-entry figcaption {
+  margin-top: 1rem;
+}
+
 .notebook-entry blockquote {
   font-size: inherit;
   line-height: inherit;
